@@ -23,3 +23,16 @@ That name is on the list
 """
 
 nameList = ("Lebron","Kobe","Michale","Shaq","Dennis")
+
+name = input("input your name: ")
+
+name_in_list=False
+for i in range(0, len(nameList)):
+
+    if nameList[i]==name:
+        name_in_list=True
+
+if name_in_list:
+    print("your name is in the list!")
+else:
+    print("your name is not in the list (check your capitalization) ")
